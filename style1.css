@@ -1,0 +1,479 @@
+html{
+  height: 2000px;
+  margin: auto;
+  width: 100%;
+  overflow: scroll;
+}
+
+body {
+    background-color: rgb(221, 218, 195);
+    margin: 0%;
+    padding: 0%;
+    height: auto;
+    width: 100%;
+    background-size: 100% 100%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    scroll-behavior: smooth;
+}
+
+.bodycontent {
+  background: transparent;
+  width: 100%;
+  margin: 15% auto;
+  left: 50%;
+  right: 50%;
+  display: inline-block;
+  height: auto;
+}
+
+.main {
+    padding: 0;
+    width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main ul {
+    margin: auto;
+    padding: 20px 0 0;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    text-align: right;
+}
+
+.main ul li{
+    float: none;
+    display: inline-block;   
+}
+
+.main ul li:nth-child(1){float: left;}
+.main ul li:nth-child(2){float: left;}
+.main ul li:nth-child(3){float: left;}
+.main ul li a{
+    color:rgb(221, 218, 195);
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px 45px;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+.main ul li a:hover{
+transition: 0.3s;
+background-color: rgb(17, 97, 107);
+border-radius: 10px;
+color: rgb(8, 47, 53);
+}
+
+#navbar {
+    width: 100%;
+    padding: 25px;
+    position: absolute;
+}
+
+.logo {
+    height: 120px;
+    width: 213.34px;
+    position: absolute;
+    left: 42%;
+    top: 0%;
+    transform: translate(0,0);
+    transition: 1s;
+    border-radius: 50px;
+    margin-left: -50px;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+header {
+    background-color:rgb(17, 97, 107);
+    height: 115px;
+    text-align: center;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    position: fixed;
+    display: inline-block;
+    z-index: 100;
+} 
+
+.Javascript {
+position: relative;
+z-index: -1;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 800px;
+  width: auto;
+  max-height: 500px;
+  height: 500px;
+  object-fit: contain;
+  position: relative;
+  margin: auto;
+  display: block;
+  top: 0px;
+  background-color:transparent;
+  z-index: -1;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  text-align: center;
+}
+
+img:hover {
+  opacity: 0.9;
+  filter: opacity(90);
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgb(79, 144, 155);
+}
+
+/* Caption text */
+.text {
+  color: white;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 15px;
+  max-width: auto;
+width: 300px;
+display: block;
+margin-right: 68%;
+margin-left: 32%;
+  background-color: black;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.text:hover {
+  color: rgb(221, 218, 195);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: rgb(221, 218, 195);
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgb(79, 144, 155);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: rgb(17, 97, 107);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.7s;
+  animation-name: fade;
+  animation-duration: 1.7s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/*jssor slider loading skin spin css*/
+.jssorl-009-spin img {
+  animation-name: jssorl-009-spin;
+  animation-duration: 1.6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes jssorl-009-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/*jssor slider bullet skin 057 css*/
+.jssorb057 .i {position:absolute;cursor:pointer;}
+.jssorb057 .i .b {fill:none;stroke:#fff;stroke-width:2000;stroke-miterlimit:10;stroke-opacity:0.4;}
+.jssorb057 .i:hover .b {stroke-opacity:.7;}
+.jssorb057 .iav .b {stroke-opacity: 1;}
+.jssorb057 .i.idn {opacity:.3;}
+
+/*jssor slider arrow skin 073 css*/
+.jssora073 {display:block;position:absolute;cursor:pointer;}
+.jssora073 .a {fill:#ddd;fill-opacity:.7;stroke:#000;stroke-width:160;stroke-miterlimit:10;stroke-opacity:.7;}
+.jssora073:hover {opacity:.8;}
+.jssora073.jssora073dn {opacity:.4;}
+.jssora073.jssora073ds {opacity:.3;pointer-events:none;
+}
+
+#jssor_1 {
+position:relative;
+margin:0 auto;
+top:0px;
+left:20px;
+width:1024px;
+height:200px;
+overflow:hidden;
+visibility:hidden;
+}
+
+
+.jssorl-009-spin {
+position:absolute;
+top:0px;
+left:0px;
+width:100%;
+height:100%;
+text-align:center;
+}
+
+.jssora073 {
+width:35px;
+height:35px;
+top:0px;
+right:30px;
+}
+
+.jssora0732 {
+width:0px;
+height:0px;
+top:0px;
+right:30px;
+}
+
+h1 {
+font-size: 20px;
+color: black;
+}
+
+p {
+font-size: 14px;
+color: rgb(8, 47, 53);
+}
+
+
+.Text:hover {
+background-color: rgb(79, 144, 155);
+margin: 30px;
+width: 90px;
+height: 30px;
+display: table;
+}
+
+.Titles:hover {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  vertical-align: middle;
+}
+
+.Text {
+  background-color: rgb(255, 255, 255);
+  margin: 30px;
+  width: 90px;
+  height: 30px;
+  display: table;
+  }
+
+.Titles {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(17, 97, 107);
+  text-align: center;
+  vertical-align: middle;
+}
+
+.bluesquare {
+  background-color: rgb(17, 97, 107);
+  height: 5px;
+}
+
+.row::after {
+clear: both;
+display: table;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  max-width: 200px;
+  margin: auto;
+  }
+  
+
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.line {
+  height: 0.5px;
+  width: 90%;
+  align-items: center;
+  background-color: rgb(79, 144, 155);
+display: table;
+margin-left: auto;
+margin-right: auto;
+margin-top: 5vh;
+}
+
+.newsblock1 {
+  background-color:white;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+  left: 25px;
+  width: 33.33%;
+  max-width: 250px;
+  height: auto;
+  padding: 15px;
+  margin: 5px;
+}
+
+.Newstitles {
+font-size: 20px;
+margin-top: auto;
+margin-bottom: auto;
+color: rgb(17, 97, 107);
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+}
+
+.newsline {
+  height: 0.5px;
+  width: 90%;
+  align-items: center;
+  background-color: rgb(79, 144, 155);
+display: table;
+margin-left: auto;
+margin-right: auto;
+margin: 3%;
+}
+
+.Newstitles:hover {
+  font-size: 20px;
+  color: rgb(17, 97, 107);
+}
+
+.readmore {
+  background-color: rgb(79, 144, 155);
+  width: 90px;
+  height: 30px;
+  display: table;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  float: right; 
+  text-align: center;
+}
+
+.readmoretext {
+  color: white;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer { 
+     background-color: rgb(17, 97, 107);
+     height: auto;
+     position: absolute;
+     width: 100%;
+     left: 0px;
+     right: 0px;
+     font-family: Arial, Helvetica, sans-serif;
+     color: rgb(221, 218, 195);
+     text-align: center;
+     font-size: 13px;
+     
+}
+
+.footerblock {
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+  width: 33.33%;
+  padding: 20px;
+  word-break: normal;
+}
+
+.footertitle {
+  margin-left: auto;
+  margin-right: auto;
+  width: 33.33%;
+  word-break: normal;
+  color: white;
+}
+
+.footerblock a {
+  color: rgb(221, 218, 195);
+}
+
+.footerblock a:hover {
+color: rgb(79, 144, 155);
+}
+
+
+
+
+
+
+
